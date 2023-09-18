@@ -4,14 +4,77 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
     <title>University Home</title>
+    <style>
+        /* CSS styles go here */
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .logo-link {
+            color: #fff;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .nav-links li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .placement-section {
+            text-align: left;
+            padding: 20px;
+        }
+
+        .placement-item {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .placement-circle {
+            text-align: center;
+            margin: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <a href="home.html" class="logo-link">VIT AP</a></div>
+        <a href="home.html" class="logo-link">VIT AP</a>
         <nav>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                 <li><a href="register.html">Register</a></li>
+                <li><a href="register.html">Register</a></li>
                 <li><a href="student.html">Students</a></li>
                 <li><a href="department.html">Departments</a></li>
                 <li><a href="placement.html">Placement</a></li>
@@ -20,17 +83,14 @@
             </ul>
         </nav>
     </header>
-        <div class="placement-section">
-            <h1>Placement and Career Services</h1>
-            <p>Our university is committed to helping students succeed in their career aspirations...</p>
-            <br>
-            <br>
-            <br>
-            <!-- Alumni Success Stories -->
-            <div class="placement-item">
-                <h2>Companies Offered</h2>
-                <div class="placement-line">
-                <div class="placement-circle">
+    <div class="placement-section">
+        <h1>Placement and Career Services</h1>
+        <p>Our university is committed to helping students succeed in their career aspirations...</p>
+        <!-- Alumni Success Stories -->
+        <div class="placement-item">
+            <h2>Companies Offered</h2>
+            <div class="placement-line">
+                <!-- Placement circles go here -->
                     <img src="https://static-00.iconduck.com/assets.00/google-icon-2048x2048-czn3g8x8.png" alt="Company 1">
                     <p>Google</p>
                 </div>
@@ -74,9 +134,7 @@
                 </div>
                 </div>
         </div>
-
-    <footer style="bottom: 1;">
-        <p>&copy; 2023 VIT AP University. All rights reserved.</p>
-    </footer>
-
-    
+        </div>
+    </div>
+</body>
+</html>
