@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>University Website</title>
+<link rel="stylesheet" href="css/vitc.css">
+    <!-- Link your CSS file here -->
+    <link rel="stylesheet" type="text/css" href="vit.css">
+
+</head>
+<body>
+    <header>
+        <img src="vitlogo.png" alt="vitap logo" height="100px" width="100px"> <h1>VIT-AP UNIVERSITY</h1>
+         </header>
+         <main>
+        <div class="one">
+            <nav>
+                <ul>
+                    <li><a href="/universityabout">About Us</a></li>
+                    <li><a href="/universityprogram">Programs</a></li>
+                    <li><a href="/universityfaculty">Faculty</a></li>
+                    <li><a href="/universityadmission">Admissions</a></li>
+                    <li><a href="/universitycontact">Contact Us</a></li>
+                </ul>
+            </nav>  
+            <button onclick="method();">darkmode</button>
+        </div>
+        <h2>Welcome to VIT-AP University</h2>
+    <div class="homecontainer">
+        
+        <p>With a history of 37 years of innovation in educational and research domain, VIT  has been a forerunner in delivering quality education. Consistently ranked among the top educational institutes in the country, the VIT group of institutions have had a proud tradition of pursuing knowledge and excellence. In keeping with this tradition,  the leadership at VIT-AP resonates a dynamic blend of academic initiative and industry partnership with a vision of creating one of the finest academic destinations in the world.  The VIT-AP campus, which is poised to become one of the country’s best campuses, offers several avenues to explore your interests, identify core competencies, and engage in an evolving lifecycle of education and growth. It is a place where
+
+students are offered immense opportunities to learn, practice, grow, and thrive
+autonomous learning is encouraged in order to enable students to chart their own course
+students carry out hands on experiments related to programme content in the form of Engineering Clinics
+industrial and international exposure is provided
+overall personality development is ensured through sports, clubs and chapters, and cultural activities.
+ </p>
+    </div>
+    <h3>INFRASTRUCTURE OF VIT-AP</h3>
+    <div class="ub">
+    <button onclick="viewo()" class="b2">view overall campus</button>
+    <button onclick="viewab1()" class="b3">View AB1</button>
+    <button onclick="viewab2()" class="b4">View AB2</button>
+    <button onclick="cb()" class="b5">View CB</button>
+    <button onclick="sa()" class="b6">View Sports academy</button>
+    </div>
+        <img src="images/VIT-AP-Advantage-B.Tech-Admissions-440x293.png" class="himg">
+        <img src="ab1.png" alt="ab1" class="himg img2">
+        <img src="ab2.png" alt="ab2" class="himg img3">
+        <img src="cb.png" alt="cb" class="himg img4">
+        <img src="sa.png" alt="sa" class="himg img5">
+        <h2>Events And Cultural Activities</h2>
+    <div class="events">
+       <img src="event1.png" alt="event1" height="300px" width="380px">
+       <img src="event2.png" alt="event2" height="300px" width="420px">
+       
+    </div>
+	<div>
+            <h2>Contact</h2>
+            <div class="cont">
+            <fieldset>
+                <legend>For Admission</legend>
+                <p>Director Admissions
+                    <br>
+                    Room No. SRB-G30<br>
+                    VIT-AP University
+                    <br>
+                    (Beside AP Secretariat) <br>
+                    Near Vijayawada, 522237 <br>
+                    Andhra Pradesh</p>
+                    <p>📞0863 2370444</p>
+                    <p>📧<a href="admission@vitap.ac.in" class="ac">admission@vitap.ac.in</a></p>
+            </fieldset>
+            <fieldset>
+                <legend>General Information</legend>
+                <p>The Registrar
+                    <br>
+                    VIT-AP University
+                    <br>
+                    (Beside AP Secretariat)
+                    <br>
+                    Near Vijayawada, 522237
+                    <br>
+                    Andhra Pradesh</p>
+                    <p>📧<a href="info@vitap.ac.in" class="ac">info@vitap.ac.in</a></p>
+            </fieldset>
+            <fieldset>
+                <legend>Admin. Office at Hyderabad</legend>
+                <p>VIT-AP University <br>
+                    Admin. Office<br>
+                    4th Floor<br>
+                    Bansal Pride Building<br>
+                    Near YSR Statue<br>
+                    Madhapur<br>
+                    HYDERABAD-500 081<br>
+                    Telangana State</p>
+                    <p>📧<a href=" adminoffice@vitap.ac.in" class="ac"> adminoffice@vitap.ac.in</a></p>
+                    <p>📞040-29559555</p>
+                    <p>📞7901311658</p>
+            </fieldset>
+        </div>
+        
+    </main>
+
+<script>
+    function method(){
+        let a=document.querySelector('button');
+        if(a.innerHTML==='darkmode'){
+        document.querySelector('body').classList.add('darkmode');
+        a.innerHTML='whitemode';
+        }
+        else{
+            document.querySelector('body').classList.remove('darkmode');
+            a.innerHTML='darkmode';
+        }
+    }
+    function viewo(){
+        let b=document.querySelector('.b2');
+        if(b.innerHTML==='view overall campus'){
+            b.innerHTML='close overall campus';
+            document.querySelector('.himg').classList.add('vimg');
+        }
+        else{
+            document.querySelector('.himg').classList.remove('vimg');
+            b.innerHTML='view overall campus';
+        }
+    }
+    function viewab1(){
+        let b=document.querySelector('.b3');
+        if(b.innerHTML==='View AB1'){
+            b.innerHTML='close AB1';
+            document.querySelector('.img2').classList.add('vimg');
+        }
+        else{
+            document.querySelector('.img2').classList.remove('vimg');
+            b.innerHTML='View AB1';
+        }
+    }
+    function viewab2(){
+        let c=document.querySelector('.b4');
+        if(c.innerHTML==='View AB2'){
+            c.innerHTML='close AB2';
+            document.querySelector('.img3').classList.add('vimg');
+        }
+        else{
+            document.querySelector('.img3').classList.remove('vimg');
+            c.innerHTML='View AB2';
+        }
+    }
+    function cb(){
+        let c=document.querySelector('.b5');
+        if(c.innerHTML==='View CB'){
+            c.innerHTML='close CB';
+            document.querySelector('.img4').classList.add('vimg');
+        }
+        else{
+            document.querySelector('.img4').classList.remove('vimg');
+            c.innerHTML='View CB';
+        }
+    }
+    function sa(){
+        let c=document.querySelector('.b6');
+        if(c.innerHTML==='View Sports academy'){
+            c.innerHTML='close Sports academy';
+            document.querySelector('.img5').classList.add('vimg');
+        }
+        else{
+            document.querySelector('.img5').classList.remove('vimg');
+            c.innerHTML='View Sports academy';
+        }
+    }
+
+</script>
+</body>
+</html>
